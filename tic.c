@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+ {
     char a='1', b='2', c='3',
          d='4', e='5', f='6',
          g='7', h='8', i='9';
@@ -8,7 +9,8 @@ int main() {
     int choice;
     char player = 'X';
 
-    for(int turn = 0; turn < 9; turn++) {
+    for(int turn = 0; turn < 9; turn++)
+     {
 
         printf("\n");
         printf("%c | %c | %c\n", a,b,c);
@@ -29,7 +31,9 @@ int main() {
         else if(choice==7 && g=='7') g=player;
         else if(choice==8 && h=='8') h=player;
         else if(choice==9 && i=='9') i=player;
-        else {
+        else 
+        {
+
             printf("Invalid move! Try again.\n");
             turn--;
             continue;
@@ -42,11 +46,12 @@ int main() {
            (b==player && e==player && h==player) ||
            (c==player && f==player && i==player) ||
            (a==player && e==player && i==player) ||
-           (c==player && e==player && g==player)) {
+           (c==player && e==player && g==player)) 
+           {
 
             printf("\nPlayer %c wins! \n", player);
             return 0;
-        }
+           }
 
         if(player=='X') player='O';
         else player='X';
