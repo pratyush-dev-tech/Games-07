@@ -1,15 +1,14 @@
 #include <stdio.h>
-
 int main() 
  {
     char a='1', b='2', c='3',
          d='4', e='5', f='6',
          g='7', h='8', i='9';
-
-    int choice;
-    char player = 'X';
-
-    for(int turn = 0; turn < 9; turn++)
+    
+    
+         int choice;
+         char player = 'X';       
+     for(int turn = 0; turn < 9; turn++)
      {
 
         printf("\n");
