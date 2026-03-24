@@ -44,7 +44,7 @@ int main() {
            (a==player && e==player && i==player) ||
            (c==player && e==player && g==player)) {
 
-            printf("\nPlayer %c wins! 🎉\n", player);
+            printf("\nPlayer %c wins! \n", player);
             return 0;
         }
 
