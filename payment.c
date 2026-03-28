@@ -8,7 +8,7 @@ struct Payment {
     char status[10];
 };
 
-// Function to add payment
+
 void addPayment() {
     FILE *fp = fopen("payments.txt", "a");
     struct Payment p;
@@ -31,7 +31,7 @@ void addPayment() {
     printf("\n✅ Payment Added Successfully!\n");
 }
 
-// Function to display payments
+
 void displayPayments() {
     FILE *fp = fopen("payments.txt", "r");
     struct Payment p;
