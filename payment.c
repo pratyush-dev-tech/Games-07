@@ -31,8 +31,8 @@ struct Payment {
     printf("\n✅ Payment Added Successfully!\n");
 }
 
-
-         void displayPayments() {
+         void displayPayments() 
+{
          FILE *fp = fopen("payments.txt", "r");
          struct Payment p;
 
@@ -55,7 +55,8 @@ struct Payment {
     fclose(fp);
 }
 
-int main() {
+int main() 
+{
     int choice;
 
     while (1) {
