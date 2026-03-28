@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Payment {
+struct Payment 
+{
     char name[50];
     int id;
     float amount;
@@ -59,7 +60,8 @@ int main()
 {
     int choice;
 
-    while (1) {
+    while (1) 
+    {
         printf("\n===== Payment Record System =====\n");
         printf("1. Add Payment\n");
         printf("2. View Payments\n");
