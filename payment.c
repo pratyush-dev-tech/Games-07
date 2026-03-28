@@ -66,8 +66,8 @@ int main()
         printf("3. Exit\n");
         printf("Enter choice: ");
         scanf("%d", &choice);
-
-        switch (choice) {
+        switch (choice) 
+        {
             case 1:
                 addPayment();
                 break;
