@@ -8,8 +8,8 @@ struct Payment {
     char status[10];
 };
 
-
-void addPayment() {
+         void addPayment() 
+{
     FILE *fp = fopen("payments.txt", "a");
     struct Payment p;
 
@@ -32,13 +32,14 @@ void addPayment() {
 }
 
 
-void displayPayments() {
-    FILE *fp = fopen("payments.txt", "r");
-    struct Payment p;
+         void displayPayments() {
+         FILE *fp = fopen("payments.txt", "r");
+         struct Payment p;
 
-    if (fp == NULL) {
-        printf("\nNo records found!\n");
-        return;
+          if (fp == NULL) 
+    {
+          printf("\nNo records found!\n");
+          return;
     }
 
     printf("\n--- Payment Records ---\n");
